@@ -1,0 +1,49 @@
+{
+  "name": "flowControl",
+  "ns": "chixui",
+  "description": "Flow Control",
+  "phrases": {
+    "active": "Adding Flow Control"
+  },
+  "require": {
+    "chix-ui": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "element": {
+        "type": "any",
+        "title": "Dom Element"
+      },
+      "styles": {
+        "type": "object",
+        "title": "Styles"
+      },
+      "config": {
+        "type": "object",
+        "title": "Config"
+      },
+      "pkgs": {
+        "type": "object",
+        "title": "Packages"
+      },
+      "state": {
+        "type": "object",
+        "title": "State"
+      },
+      "flows": {
+        "type": "object",
+        "title": "Flows"
+      },
+      "nodeDefinitions": {
+        "type": "object",
+        "title": "Node Definitions"
+      }
+    },
+    "output": {
+      "out": {
+        "type": "FlowControl",
+        "title": "Flow Control"
+      }
+    }
+  }
+}

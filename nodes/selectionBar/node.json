@@ -1,0 +1,29 @@
+{
+  "name": "selectionBar",
+  "ns": "chixui",
+  "description": "Selection Bar",
+  "phrases": {
+    "active": "Adding Selection Bar"
+  },
+  "require": {
+    "chix-ui": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "element": {
+        "type": "any",
+        "title": "Dom Element"
+      },
+      "state": {
+        "type": "object",
+        "title": "State"
+      }
+    },
+    "output": {
+      "out": {
+        "type": "SelectionBar",
+        "title": "SelectionBar"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "iconBar",
+  "ns": "chixui",
+  "description": "IconBar",
+  "phrases": {
+    "active": "Adding IconBar"
+  },
+  "require": {
+    "chix-ui": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "element": {
+        "type": "any",
+        "title": "Element"
+      },
+      "state": {
+        "type": "object",
+        "title": "State"
+      },
+      "flowControl": {
+        "type": "FlowControl",
+        "title": "Flow Control"
+      },
+      "icons": {
+        "type": "object",
+        "title": "Icons",
+        "properties": {
+          "play": {
+            "type": "boolean",
+            "title": "Play",
+            "default": true
+          },
+          "step": {
+            "type": "boolean",
+            "title": "Step",
+            "default": true
+          },
+          "stop": {
+            "type": "boolean",
+            "title": "Stop",
+            "default": true
+          }
+        }
+      }
+    },
+    "output": {
+      "out": {
+        "type": "IconBar",
+        "title": "IconBar"
+      }
+    }
+  }
+}

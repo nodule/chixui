@@ -1,0 +1,33 @@
+{
+  "name": "bulletsBar",
+  "ns": "chixui",
+  "description": "Bullets Bar",
+  "phrases": {
+    "active": "Adding Bullets Bar"
+  },
+  "require": {
+    "chix-ui": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "element": {
+        "type": "any",
+        "title": "Dom Element"
+      },
+      "state": {
+        "type": "object",
+        "title": "State"
+      },
+      "flowControl": {
+        "type": "FlowControl",
+        "title": "Flow Control"
+      }
+    },
+    "output": {
+      "out": {
+        "type": "BulletsBar",
+        "title": "BulletsBar"
+      }
+    }
+  }
+}

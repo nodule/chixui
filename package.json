@@ -1,0 +1,28 @@
+{
+  "name": "nodule-chixui",
+  "description": "Chiχ UI for Chiχ",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/chixui.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "main": "x",
+  "scripts": {
+    "test": "chit -r"
+  },
+  "devDependencies": {
+    "chit": "0.x.x"
+  },
+  "chix": {
+    "name": "chixui",
+    "color": "rgb(35,116,136)"
+  },
+  "dependencies": {
+    "chix-ui": "git://github.com/psichi/chix-ui"
+  }
+}

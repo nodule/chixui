@@ -1,0 +1,260 @@
+{
+  "name": "chixui",
+  "description": "Chiχ UI for Chiχ",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/chixui.git"
+  },
+  "dependencies": {
+    "chix-ui": "git://github.com/psichi/chix-ui"
+  },
+  "nodes": [
+    {
+      "ports": {
+        "input": {
+          "element": {
+            "type": "any",
+            "title": "Dom Element"
+          },
+          "state": {
+            "type": "object",
+            "title": "State"
+          },
+          "flowControl": {
+            "type": "FlowControl",
+            "title": "Flow Control"
+          }
+        },
+        "output": {
+          "out": {
+            "type": "BulletsBar",
+            "title": "BulletsBar"
+          }
+        }
+      },
+      "require": {
+        "chix-ui": "0.x.x"
+      },
+      "phrases": {
+        "active": "Adding Bullets Bar"
+      },
+      "description": "Bullets Bar",
+      "ns": "chixui",
+      "name": "bulletsBar",
+      "fn": "output.out =  new chix_ui.BulletsBar(input.element, {\n state: input.state,\n flowControl: input.flowControl\n});\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "element": {
+            "type": "any",
+            "title": "Dom Element"
+          },
+          "styles": {
+            "type": "object",
+            "title": "Styles"
+          },
+          "config": {
+            "type": "object",
+            "title": "Config"
+          },
+          "pkgs": {
+            "type": "object",
+            "title": "Packages"
+          },
+          "state": {
+            "type": "object",
+            "title": "State"
+          },
+          "flows": {
+            "type": "object",
+            "title": "Flows"
+          },
+          "nodeDefinitions": {
+            "type": "object",
+            "title": "Node Definitions"
+          }
+        },
+        "output": {
+          "out": {
+            "type": "FlowControl",
+            "title": "Flow Control"
+          }
+        }
+      },
+      "require": {
+        "chix-ui": "0.x.x"
+      },
+      "phrases": {
+        "active": "Adding Flow Control"
+      },
+      "description": "Flow Control",
+      "ns": "chixui",
+      "name": "flowControl",
+      "fn": "output.out =  new chix_ui.FlowControl(input.element, {\n  styles: input.styles,\n  config: input.config,\n  pkgs: input.pkgs,\n  state: input.state,\n  flows: input.flows,\n  nodeDefinitions: input.nodeDefinitions\n});\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "element": {
+            "type": "any",
+            "title": "Element"
+          },
+          "state": {
+            "type": "object",
+            "title": "State"
+          },
+          "flowControl": {
+            "type": "FlowControl",
+            "title": "Flow Control"
+          },
+          "icons": {
+            "type": "object",
+            "title": "Icons",
+            "properties": {
+              "play": {
+                "type": "boolean",
+                "title": "Play",
+                "default": true
+              },
+              "step": {
+                "type": "boolean",
+                "title": "Step",
+                "default": true
+              },
+              "stop": {
+                "type": "boolean",
+                "title": "Stop",
+                "default": true
+              }
+            }
+          }
+        },
+        "output": {
+          "out": {
+            "type": "IconBar",
+            "title": "IconBar"
+          }
+        }
+      },
+      "require": {
+        "chix-ui": "0.x.x"
+      },
+      "phrases": {
+        "active": "Adding IconBar"
+      },
+      "description": "IconBar",
+      "ns": "chixui",
+      "name": "iconBar",
+      "fn": "output.out =  new chix_ui.IconBar(input.element, {\n  state: input.state,\n  flowControl: input.flowControl,\n  icons: input.icons\n});\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "element": {
+            "type": "any",
+            "title": "Dom Element"
+          },
+          "state": {
+            "type": "object",
+            "title": "State"
+          }
+        },
+        "output": {
+          "out": {
+            "type": "SelectionBar",
+            "title": "SelectionBar"
+          }
+        }
+      },
+      "require": {
+        "chix-ui": "0.x.x"
+      },
+      "phrases": {
+        "active": "Adding Selection Bar"
+      },
+      "description": "Selection Bar",
+      "ns": "chixui",
+      "name": "selectionBar",
+      "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "element": {
+            "type": "any",
+            "title": "Dom Element"
+          },
+          "event": {
+            "type": "string",
+            "enum": [
+              "select",
+              "change",
+              "submit",
+              "reset",
+              "focus",
+              "blur"
+            ],
+            "title": "Dom Event"
+          }
+        },
+        "output": {
+          "event": {
+            "type": "object",
+            "title": "Event"
+          }
+        }
+      },
+      "require": {
+        "chix-ui": "0.x.x"
+      },
+      "phrases": {
+        "active": "Adding Flow Control"
+      },
+      "description": "Flow Control",
+      "ns": "chixui",
+      "name": "flowControl",
+      "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "element": {
+            "type": "any",
+            "title": "Dom Element"
+          },
+          "event": {
+            "type": "string",
+            "enum": [
+              "select",
+              "change",
+              "submit",
+              "reset",
+              "focus",
+              "blur"
+            ],
+            "title": "Dom Event"
+          }
+        },
+        "output": {
+          "event": {
+            "type": "object",
+            "title": "Event"
+          }
+        }
+      },
+      "require": {
+        "chix-ui": "0.x.x"
+      },
+      "phrases": {
+        "active": "Adding Flow Control"
+      },
+      "description": "Flow Control",
+      "ns": "chixui",
+      "name": "flowControl",
+      "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
+    }
+  ],
+  "twigs": []
+}
