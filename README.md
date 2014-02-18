@@ -1,2 +1,2 @@
-dom
+Chiχ UI for Chiχ
 ===
