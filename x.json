@@ -11,6 +11,11 @@
   },
   "nodes": [
     {
+      "dependencies": {
+        "npm": {
+          "chix-ui": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "element": {
@@ -33,9 +38,6 @@
           }
         }
       },
-      "require": {
-        "chix-ui": "0.x.x"
-      },
       "phrases": {
         "active": "Adding Bullets Bar"
       },
@@ -45,6 +47,11 @@
       "fn": "output.out =  new chix_ui.BulletsBar(input.element, {\n state: input.state,\n flowControl: input.flowControl\n});\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "chix-ui": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "element": {
@@ -83,9 +90,6 @@
           }
         }
       },
-      "require": {
-        "chix-ui": "0.x.x"
-      },
       "phrases": {
         "active": "Adding Flow Control"
       },
@@ -95,6 +99,11 @@
       "fn": "output.out =  new chix_ui.FlowControl(input.element, {\n  styles: input.styles,\n  config: input.config,\n  pkgs: input.pkgs,\n  state: input.state,\n  flows: input.flows,\n  nodeDefinitions: input.nodeDefinitions\n});\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "chix-ui": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "element": {
@@ -138,9 +147,6 @@
           }
         }
       },
-      "require": {
-        "chix-ui": "0.x.x"
-      },
       "phrases": {
         "active": "Adding IconBar"
       },
@@ -150,6 +156,11 @@
       "fn": "output.out =  new chix_ui.IconBar(input.element, {\n  state: input.state,\n  flowControl: input.flowControl,\n  icons: input.icons\n});\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "chix-ui": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "element": {
@@ -168,9 +179,6 @@
           }
         }
       },
-      "require": {
-        "chix-ui": "0.x.x"
-      },
       "phrases": {
         "active": "Adding Selection Bar"
       },
@@ -180,6 +188,11 @@
       "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "chix-ui": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "element": {
@@ -205,9 +218,6 @@
             "title": "Event"
           }
         }
-      },
-      "require": {
-        "chix-ui": "0.x.x"
       },
       "phrases": {
         "active": "Adding Flow Control"
@@ -218,6 +228,11 @@
       "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "chix-ui": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "element": {
@@ -243,9 +258,6 @@
             "title": "Event"
           }
         }
-      },
-      "require": {
-        "chix-ui": "0.x.x"
       },
       "phrases": {
         "active": "Adding Flow Control"

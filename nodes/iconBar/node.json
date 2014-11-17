@@ -5,9 +5,6 @@
   "phrases": {
     "active": "Adding IconBar"
   },
-  "require": {
-    "chix-ui": "0.x.x"
-  },
   "ports": {
     "input": {
       "element": {
@@ -49,6 +46,11 @@
         "type": "IconBar",
         "title": "IconBar"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "chix-ui": "0.x.x"
     }
   }
 }

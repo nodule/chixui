@@ -5,9 +5,6 @@
   "phrases": {
     "active": "Adding Flow Control"
   },
-  "require": {
-    "chix-ui": "0.x.x"
-  },
   "ports": {
     "input": {
       "element": {
@@ -32,6 +29,11 @@
         "type": "object",
         "title": "Event"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "chix-ui": "0.x.x"
     }
   }
 }

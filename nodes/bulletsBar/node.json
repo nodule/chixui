@@ -5,9 +5,6 @@
   "phrases": {
     "active": "Adding Bullets Bar"
   },
-  "require": {
-    "chix-ui": "0.x.x"
-  },
   "ports": {
     "input": {
       "element": {
@@ -28,6 +25,11 @@
         "type": "BulletsBar",
         "title": "BulletsBar"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "chix-ui": "0.x.x"
     }
   }
 }

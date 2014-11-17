@@ -5,9 +5,6 @@
   "phrases": {
     "active": "Adding Selection Bar"
   },
-  "require": {
-    "chix-ui": "0.x.x"
-  },
   "ports": {
     "input": {
       "element": {
@@ -24,6 +21,11 @@
         "type": "SelectionBar",
         "title": "SelectionBar"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "chix-ui": "0.x.x"
     }
   }
 }
