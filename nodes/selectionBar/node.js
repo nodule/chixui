@@ -1,4 +1,1 @@
-output.out =  new chix_ui.FlowControl({
-
-
-});
+output.out = $.create(new chix_ui.FlowControl({}));
