@@ -1,8 +1,8 @@
-output.out =  new chix_ui.FlowControl(input.element, {
-  styles: input.styles,
-  config: input.config,
-  pkgs: input.pkgs,
-  state: input.state,
-  flows: input.flows,
-  nodeDefinitions: input.nodeDefinitions
+output.out =  new chix_ui.FlowControl($.element, {
+  styles: $.styles,
+  config: $.config,
+  pkgs: $.pkgs,
+  state: $.state,
+  flows: $.flows,
+  nodeDefinitions: $.nodeDefinitions
 });
