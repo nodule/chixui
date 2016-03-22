@@ -44,7 +44,7 @@
       "description": "Bullets Bar",
       "ns": "chixui",
       "name": "bulletsBar",
-      "fn": "output.out =  new chix_ui.BulletsBar(input.element, {\n state: input.state,\n flowControl: input.flowControl\n});\n"
+      "fn": "output.out =  new chix_ui.BulletsBar($.element, {\n state: $.get('state'),\n flowControl: $.get('flowControl')\n});\n"
     },
     {
       "dependencies": {
@@ -96,7 +96,7 @@
       "description": "Flow Control",
       "ns": "chixui",
       "name": "flowControl",
-      "fn": "output.out =  new chix_ui.FlowControl(input.element, {\n  styles: input.styles,\n  config: input.config,\n  pkgs: input.pkgs,\n  state: input.state,\n  flows: input.flows,\n  nodeDefinitions: input.nodeDefinitions\n});\n"
+      "fn": "output.out =  $.create(new chix_ui.FlowControl($.element, {\n  styles: $.styles,\n  config: $.config,\n  pkgs: $.pkgs,\n  state: $.state,\n  flows: $.flows,\n  nodeDefinitions: $.nodeDefinitions\n}));\n"
     },
     {
       "dependencies": {
@@ -153,7 +153,7 @@
       "description": "IconBar",
       "ns": "chixui",
       "name": "iconBar",
-      "fn": "output.out =  new chix_ui.IconBar(input.element, {\n  state: input.state,\n  flowControl: input.flowControl,\n  icons: input.icons\n});\n"
+      "fn": "output.out = $.create(new chix_ui.IconBar($.element, {\n  state: $.state,\n  flowControl: $.flowControl,\n  icons: $.icons\n}));\n"
     },
     {
       "dependencies": {
@@ -185,7 +185,7 @@
       "description": "Selection Bar",
       "ns": "chixui",
       "name": "selectionBar",
-      "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
+      "fn": "output.out = $.create(new chix_ui.FlowControl({}));\n"
     },
     {
       "dependencies": {
@@ -225,7 +225,7 @@
       "description": "Flow Control",
       "ns": "chixui",
       "name": "flowControl",
-      "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
+      "fn": "output.out = $.create(new chix_ui.FlowControl({}));\n"
     },
     {
       "dependencies": {
@@ -265,7 +265,7 @@
       "description": "Flow Control",
       "ns": "chixui",
       "name": "flowControl",
-      "fn": "output.out =  new chix_ui.FlowControl({\n\n\n});\n"
+      "fn": "output.out = $.create(new chix_ui.FlowControl({}));\n"
     }
   ],
   "twigs": []
